@@ -19,6 +19,10 @@
 		F1A1B09028C2D36B005B0600 /* Currency_ConverterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1B08F28C2D36B005B0600 /* Currency_ConverterUITestsLaunchTests.swift */; };
 		F1EB598228C37C5C0045331A /* ConvertOutPutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB598128C37C5C0045331A /* ConvertOutPutViewController.swift */; };
 		F1EB598428C37C890045331A /* ConvertStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB598328C37C890045331A /* ConvertStatusViewController.swift */; };
+		F1EB59A228C3C14F0045331A /* CurrencyRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB59A128C3C14F0045331A /* CurrencyRateController.swift */; };
+		F1EB59AA28C3C8300045331A /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EB59A928C3C8300045331A /* NetworkLayer.framework */; };
+		F1EB59AB28C3C8300045331A /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1EB59A928C3C8300045331A /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1EB59AF28C3C86E0045331A /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB59AE28C3C86E0045331A /* CurrencyRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F1EB59AC28C3C8300045331A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1EB59AB28C3C8300045331A /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F1A1B06628C2D36A005B0600 /* Currency-Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency-Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A1B06928C2D36A005B0600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +73,10 @@
 		F1A1B08F28C2D36B005B0600 /* Currency_ConverterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency_ConverterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F1EB598128C37C5C0045331A /* ConvertOutPutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertOutPutViewController.swift; sourceTree = "<group>"; };
 		F1EB598328C37C890045331A /* ConvertStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertStatusViewController.swift; sourceTree = "<group>"; };
+		F1EB59A128C3C14F0045331A /* CurrencyRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateController.swift; sourceTree = "<group>"; };
+		F1EB59A428C3C1650045331A /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EB59A928C3C8300045331A /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EB59AE28C3C86E0045331A /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EB59AA28C3C8300045331A /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +112,7 @@
 				F1A1B08228C2D36B005B0600 /* Currency-ConverterTests */,
 				F1A1B08C28C2D36B005B0600 /* Currency-ConverterUITests */,
 				F1A1B06728C2D36A005B0600 /* Products */,
+				F1EB59A328C3C1650045331A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +129,7 @@
 		F1A1B06828C2D36A005B0600 /* Currency-Converter */ = {
 			isa = PBXGroup;
 			children = (
+				F1EB59A828C3C7C10045331A /* Data */,
 				F1A1B06928C2D36A005B0600 /* AppDelegate.swift */,
 				F1A1B06B28C2D36A005B0600 /* SceneDelegate.swift */,
 				F1A1B06D28C2D36A005B0600 /* ConverterInputViewController.swift */,
@@ -136,6 +161,32 @@
 			path = "Currency-ConverterUITests";
 			sourceTree = "<group>";
 		};
+		F1EB59A328C3C1650045331A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1EB59A928C3C8300045331A /* NetworkLayer.framework */,
+				F1EB59A428C3C1650045331A /* Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1EB59A828C3C7C10045331A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1EB59AD28C3C83F0045331A /* Model */,
+				F1EB59A128C3C14F0045331A /* CurrencyRateController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F1EB59AD28C3C83F0045331A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1EB59AE28C3C86E0045331A /* CurrencyRate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +197,7 @@
 				F1A1B06228C2D36A005B0600 /* Sources */,
 				F1A1B06328C2D36A005B0600 /* Frameworks */,
 				F1A1B06428C2D36A005B0600 /* Resources */,
+				F1EB59AC28C3C8300045331A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,9 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EB59A228C3C14F0045331A /* CurrencyRateController.swift in Sources */,
 				F1A1B06E28C2D36A005B0600 /* ConverterInputViewController.swift in Sources */,
 				F1EB598228C37C5C0045331A /* ConvertOutPutViewController.swift in Sources */,
 				F1A1B07428C2D36A005B0600 /* Currency_Converter.xcdatamodeld in Sources */,
+				F1EB59AF28C3C86E0045331A /* CurrencyRate.swift in Sources */,
 				F1A1B06A28C2D36A005B0600 /* AppDelegate.swift in Sources */,
 				F1EB598428C37C890045331A /* ConvertStatusViewController.swift in Sources */,
 				F1A1B06C28C2D36A005B0600 /* SceneDelegate.swift in Sources */,
