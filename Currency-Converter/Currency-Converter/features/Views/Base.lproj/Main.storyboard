@@ -17,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-jy-ZT5">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-jy-ZT5">
                                 <rect key="frame" x="20" y="425.5" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="gSH-5O-bf0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-um-z8B">
-                                <rect key="frame" x="247" y="276" width="147" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-um-z8B">
+                                <rect key="frame" x="247" y="278.5" width="147" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-Zj-Kli">
-                                <rect key="frame" x="20" y="276" width="147" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-Zj-Kli">
+                                <rect key="frame" x="20" y="278.5" width="147" height="31.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f5-Wc-Uji">
@@ -48,9 +48,12 @@
                                     <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ConvertAndGoToResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkj-5r-CGF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-g5-qf8">
-                                <rect key="frame" x="20" y="276" width="147" height="34"/>
+                                <rect key="frame" x="20" y="278.5" width="147" height="31.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -63,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au0-0p-yuO">
-                                <rect key="frame" x="247" y="276" width="147" height="34"/>
+                                <rect key="frame" x="247" y="278.5" width="147" height="31.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.down.circle" catalog="system">
@@ -83,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-hZ-Fp0">
-                                <rect key="frame" x="177" y="276" width="60" height="34"/>
+                                <rect key="frame" x="177" y="278.5" width="60" height="31.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="bXG-u9-geG"/>
                                 </constraints>
@@ -92,6 +95,18 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From currency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbr-Cp-3Aw">
+                                <rect key="frame" x="20" y="241" width="147" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.89019608500000003" green="0.2941176593" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To currency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-rS-M5p">
+                                <rect key="frame" x="247" y="241" width="147" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.89019608500000003" green="0.2941176593" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,17 +118,22 @@
                             <constraint firstItem="Wbk-g5-qf8" firstAttribute="top" secondItem="YnS-Zj-Kli" secondAttribute="top" id="9zM-9V-Q8z"/>
                             <constraint firstItem="nXV-um-z8B" firstAttribute="leading" secondItem="9b7-hZ-Fp0" secondAttribute="trailing" constant="10" id="CXF-Nj-3Tm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OOp-jy-ZT5" secondAttribute="trailing" constant="20" id="ClZ-fh-Ada"/>
+                            <constraint firstItem="YnS-Zj-Kli" firstAttribute="top" secondItem="gbr-Cp-3Aw" secondAttribute="bottom" constant="20" id="DML-BL-Ubd"/>
                             <constraint firstItem="au0-0p-yuO" firstAttribute="trailing" secondItem="nXV-um-z8B" secondAttribute="trailing" id="Dj9-to-d4Q"/>
                             <constraint firstItem="nXV-um-z8B" firstAttribute="height" secondItem="YnS-Zj-Kli" secondAttribute="height" id="FAc-kI-fvZ"/>
+                            <constraint firstItem="nXV-um-z8B" firstAttribute="top" secondItem="Jt0-rS-M5p" secondAttribute="bottom" constant="20" id="GGw-n1-B72"/>
                             <constraint firstItem="Wbk-g5-qf8" firstAttribute="leading" secondItem="YnS-Zj-Kli" secondAttribute="leading" id="GSf-18-Vt5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n1N-bV-Ekz" secondAttribute="trailing" constant="20" id="GUP-9R-1zf"/>
                             <constraint firstItem="au0-0p-yuO" firstAttribute="top" secondItem="9b7-hZ-Fp0" secondAttribute="top" id="GUy-wz-dHn"/>
+                            <constraint firstItem="au0-0p-yuO" firstAttribute="trailing" secondItem="Jt0-rS-M5p" secondAttribute="trailing" id="JLS-q0-faj"/>
                             <constraint firstItem="Wbk-g5-qf8" firstAttribute="trailing" secondItem="YnS-Zj-Kli" secondAttribute="trailing" id="L9f-Q8-M1x"/>
                             <constraint firstItem="9b7-hZ-Fp0" firstAttribute="leading" secondItem="YnS-Zj-Kli" secondAttribute="trailing" constant="10" id="Pgz-Xc-2uV"/>
                             <constraint firstItem="Wbk-g5-qf8" firstAttribute="bottom" secondItem="YnS-Zj-Kli" secondAttribute="bottom" id="RIY-lT-wjy"/>
+                            <constraint firstItem="au0-0p-yuO" firstAttribute="leading" secondItem="Jt0-rS-M5p" secondAttribute="leading" id="SHA-tV-k2X"/>
                             <constraint firstItem="OOp-jy-ZT5" firstAttribute="top" secondItem="n1N-bV-Ekz" secondAttribute="bottom" constant="19.5" id="SHF-zi-WCC"/>
                             <constraint firstItem="au0-0p-yuO" firstAttribute="bottom" secondItem="9b7-hZ-Fp0" secondAttribute="bottom" id="Svw-zP-QTs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nXV-um-z8B" secondAttribute="trailing" constant="20" id="UMf-XW-8Tu"/>
+                            <constraint firstItem="Wbk-g5-qf8" firstAttribute="leading" secondItem="gbr-Cp-3Aw" secondAttribute="leading" id="b8m-74-WAs"/>
                             <constraint firstItem="YnS-Zj-Kli" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cwg-qe-kkp"/>
                             <constraint firstItem="n1N-bV-Ekz" firstAttribute="top" secondItem="YnS-Zj-Kli" secondAttribute="bottom" constant="75" id="f30-8I-QG0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5f5-Wc-Uji" secondAttribute="bottom" constant="60" id="iLT-3T-afa"/>
@@ -121,6 +141,7 @@
                             <constraint firstItem="au0-0p-yuO" firstAttribute="leading" secondItem="nXV-um-z8B" secondAttribute="leading" id="jsk-MB-7qB"/>
                             <constraint firstItem="OOp-jy-ZT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ofq-Lf-sh0"/>
                             <constraint firstItem="au0-0p-yuO" firstAttribute="top" secondItem="nXV-um-z8B" secondAttribute="top" id="oxw-gm-ebT"/>
+                            <constraint firstItem="Wbk-g5-qf8" firstAttribute="trailing" secondItem="gbr-Cp-3Aw" secondAttribute="trailing" id="pK0-ff-WE4"/>
                             <constraint firstItem="OOp-jy-ZT5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sAU-e6-qsB"/>
                             <constraint firstItem="n1N-bV-Ekz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yGG-c4-PaH"/>
                         </constraints>
@@ -145,16 +166,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great now you have 177.77 Eur in your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fl-fX-eWs">
-                                <rect key="frame" x="20" y="427.5" width="374" height="41.5"/>
+                                <rect key="frame" x="20" y="439" width="374" height="18.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="a05-nt-YIf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ3-XG-DYJ">
-                                <rect key="frame" x="184.5" y="346.5" width="45" height="31"/>
+                                <rect key="frame" x="184.5" y="358" width="45" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="checkmark.circle" catalog="system" symbolScale="large"/>
